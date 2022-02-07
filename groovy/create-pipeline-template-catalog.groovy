@@ -40,7 +40,7 @@ if (microBlogJob == null) {
             </entry>
             <entry>
               <string>repoOwner</string>
-              <string>REPLACE_GITHUB_ORG</string>
+              <string>zvercodebender-cb-demos</string>
             </entry>
             <entry>
               <string>repository</string>
@@ -83,7 +83,7 @@ if (microBlogJob == null) {
           </entry>
           <entry>
             <string>repoOwner</string>
-            <string>REPLACE_GITHUB_ORG</string>
+            <string>zvercodebender-cb-demos</string>
           </entry>
           <entry>
             <string>repository</string>
@@ -126,7 +126,7 @@ if (microBlogJob == null) {
             </entry>
             <entry>
               <string>repoOwner</string>
-              <string>REPLACE_GITHUB_ORG</string>
+              <string>zvercodebender-cb-demos</string>
             </entry>
             <entry>
               <string>repository</string>
@@ -169,7 +169,7 @@ if (microBlogJob == null) {
           </entry>
           <entry>
             <string>repoOwner</string>
-            <string>REPLACE_GITHUB_ORG</string>
+            <string>zvercodebender-cb-demos</string>
           </entry>
           <entry>
             <string>repository</string>

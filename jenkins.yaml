@@ -18,7 +18,7 @@ unclassified:
           scm:
             github:
               credentialsId: "github-sa"
-              repoOwner: "REPLACE_GITHUB_ORG"
+              repoOwner: "zvercodebender-cb-demos"
               repository: "pipeline-library"
 globalCloudBeesPipelineTemplateCatalog:
   catalogs:
@@ -27,8 +27,8 @@ globalCloudBeesPipelineTemplateCatalog:
       git:
         credentialsId: "github-sa"
         id: "4416b4b4-dd29-4ef9-9e9c-34c6fc60faa3"
-        remote: "https://github.com/REPLACE_CONTROLLER_NAME/pipeline-template-catalog.git"
+        remote: "https://github.com/zvercodebender-cb-demos/pipeline-template-catalog.git"
     updateInterval: "1h"
 
 groovy:
-  - url: https://raw.githubusercontent.com/REPLACE_GITHUB_ORG/cloudbees-ci-config-bundle/main/groovy/create-pipeline-template-catalog.groovy
+  - url: https://raw.githubusercontent.com/zvercodebender-cb-demos/cloudbees-ci-config-bundle/main/groovy/create-pipeline-template-catalog.groovy

@@ -1,0 +1,34 @@
+jenkins:
+  systemMessage: 'Jenkins configured using CloudBees CI CasC - v1'
+unclassified:
+  hibernationConfiguration:
+    activities:
+    - "build"
+    - "web"
+    enabled: true
+    gracePeriod: 36000
+  gitHubConfiguration:
+    apiRateLimitChecker: ThrottleForNormalize
+  globallibraries:
+    libraries:
+    - defaultVersion: "master"
+      name: "cb-days"
+      retriever:
+        modernSCM:
+          scm:
+            github:
+              credentialsId: "github-sa"
+              repoOwner: "REPLACE_GITHUB_ORG"
+              repository: "pipeline-library"
+globalCloudBeesPipelineTemplateCatalog:
+  catalogs:
+  - branchOrTag: "master"
+    scm:
+      git:
+        credentialsId: "github-sa"
+        id: "4416b4b4-dd29-4ef9-9e9c-34c6fc60faa3"
+        remote: "https://github.com/REPLACE_CONTROLLER_NAME/pipeline-template-catalog.git"
+    updateInterval: "1h"
+
+groovy:
+  - url: https://raw.githubusercontent.com/REPLACE_GITHUB_ORG/cloudbees-ci-config-bundle/main/groovy/create-pipeline-template-catalog.groovy

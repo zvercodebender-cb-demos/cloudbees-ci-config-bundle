@@ -1,0 +1,37 @@
+removeStrategy:
+  rbac: SYNC
+  items: NONE
+items:
+- kind: pipeline
+  name: unhibernate
+  concurrentBuild: false
+  displayName: unhibernate
+  resumeBlocked: false
+  description: 'simple pipeline with cron trigger to unhibernate every morning'
+  definition:
+    cpsFlowDefinition:
+      sandbox: true
+      script: |-
+        pipeline {
+            agent none
+            stages {
+                stage('Wake Up!') {
+                    steps {
+                        echo "I'm awake!"
+                    }
+                }
+            }
+        }
+  disabled: false
+  properties:
+  - buildDiscarder:
+      strategy:
+        logRotator:
+          artifactDaysToKeep: -1
+          artifactNumToKeep: -1
+          daysToKeep: -1
+          numToKeep: 1
+  - pipelineTriggers:
+      triggers:
+      - cron:
+          spec: H 11 * * 1-5
